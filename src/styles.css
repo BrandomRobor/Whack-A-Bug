@@ -3,7 +3,7 @@
 
 :root {
   --focus-color: darkslategray;
-  --background-color: white;
+  --background-color: cadetblue;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --focus-color: white;
+    --focus-color: cadetblue;
     --background-color: darkslategray;
   }
 }

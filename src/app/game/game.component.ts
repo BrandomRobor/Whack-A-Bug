@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GameDifficulty, GameManagerService } from '../services/game-manager.service';
+import { BugType, GameDifficulty, GameManagerService } from '../services/game-manager.service';
 
 @Component({
   selector: 'app-game',
@@ -41,8 +41,7 @@ export class GameComponent implements OnInit, AfterViewInit {
     } 
   }
 
-  onQuitClick() {
-    this.manager.setDifficultyById(-1)
+  onQuitClick(): void {
     this.router.navigateByUrl("/")
   }
 

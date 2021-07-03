@@ -5,6 +5,6 @@
 
 <div class="container">
   <div id="game-board">
-    <app-bug *ngFor="let item of [].constructor((boardSize * boardSize))"></app-bug>
+    <app-bug *ngFor="let item of [].constructor((boardSize * boardSize)); let i = index" [bugId]="i"></app-bug>
   </div>
 </div>

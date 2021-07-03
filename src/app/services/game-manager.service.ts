@@ -40,6 +40,11 @@ export class GameManagerService {
     return this.currentScore * 1000
   }
 
+  public clearGameState(): void {
+    this.currentDifficulty = GameDifficulty.UNKNOWN
+    this.currentScore = 0
+  }
+
 }
 
 export const enum BugType {

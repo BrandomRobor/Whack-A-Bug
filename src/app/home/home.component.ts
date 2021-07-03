@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.manager.clearGameState()
   }
 
   onDifficultySelect(id: number): void {
