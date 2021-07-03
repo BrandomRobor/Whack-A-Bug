@@ -1,0 +1,10 @@
+<nav>
+  <button class="button" (click)="onQuitClick()">Quit</button>
+  <span id="score">{{points}}</span>
+</nav>
+
+<div class="container">
+  <div id="game-board">
+    <app-bug *ngFor="let item of [].constructor((boardSize * boardSize))"></app-bug>
+  </div>
+</div>

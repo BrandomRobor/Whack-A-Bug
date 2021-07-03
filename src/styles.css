@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root {
+  --focus-color: darkslategray;
+  --background-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 0.5em 2.5em;
+  background-color: transparent;
+  border: 0.5em solid var(--focus-color);
+  border-radius: 1em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10pt;
+  color: var(--focus-color);
+  transition: font-size 500ms;
+}
+
+.button:hover, .selected {
+  background-color: var(--focus-color);
+  color: var(--background-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --focus-color: white;
+    --background-color: darkslategray;
+  }
+}

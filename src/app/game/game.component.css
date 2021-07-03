@@ -1,0 +1,17 @@
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(var(--board-size), 1fr);
+  grid-template-rows: repeat(var(--board-size), 1fr);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+#score {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20pt;
+  color: var(--focus-color);
+}
